@@ -1,7 +1,7 @@
-import { useUpload } from './use-upload';
-import { UploadProvider, UploadContext } from './provider';
-import { createXhrClient } from './clients/xhr';
-import { createGraphQLClient } from './clients/graphql';
+import { useUpload } from "./use-upload";
+import { UploadProvider, UploadContext } from "./provider";
+import { createXhrClient } from "./clients/xhr";
+import { createGraphQLClient } from "./clients/graphql";
 
 export {
   useUpload,
@@ -11,4 +11,4 @@ export {
   createGraphQLClient,
 };
 
-export type FileOrFileList = FileList | File;
+export type FileOrFileList = FileList | File | undefined;
